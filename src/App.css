@@ -1,38 +1,105 @@
+/* src/App.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('https://as1.ftcdn.net/v2/jpg/06/10/39/28/1000_F_610392899_xJIGPyY5I2A449viXPQFXoqx5uYzidjo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-container {
+  background-color: #1f2937;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 0 40px #000;
+  width: 320px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ll {
+  font-size: 50px;
+  color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  margin-bottom: 20px;
+  margin-top: -40px;
+  color: #00aeff;
+}
+
+input {
+  margin-right: 10px;
+  padding: 10px;
+  width: 240px;
+  border: 2px solid #007acc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  color: #000;
+  background-color: #f1f1f1;
+}
+
+input:focus {
+  border-color: #00509e;
+  box-shadow: 0 0 10px #007acc;
+}
+
+button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #007acc;
+  box-shadow: 0 0 10px #000;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00509e;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  flex: 1;
+  text-align: left;
+  color: #f0f0f0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #007acc;
+}
+
+.edit-box {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-box input {
+  margin-bottom: 10px;
 }
