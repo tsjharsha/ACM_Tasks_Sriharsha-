@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+            background-color: #c2bfcc;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            background: linear-gradient(135deg, #4e5f70, #2e3a44);
+            color: #fff;
+            padding: 20px 0;
+            position: relative;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: darkmagenta;
+        }
+
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #about, #projects, #contact, #education, #experience {
+            padding: 20px;
+            margin: 0 auto;
+            width: 70%;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #skills {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            flex-direction: column;
+            background-color:#c2bfcc;
+        }
+
+        .skills-list {
+            list-style: none;
+            text-align: center;
+            width: 50%;
+        }
+
+        .skills-list li {
+            background: #d1d1d1;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            color: #333;
+            font-size: 1.1em;
+            transition: background 0.3s ease;
+        }
+
+        .skills-list li:hover {
+            background: #9b59b6;
+            color: white;
+        }
+
+        .projects-gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project-item {
+            background-color: blueviolet;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .project-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        #education table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        #education th, #education td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #education th {
+            background-color: #333;
+            color: white;
+        }
+
+        #education tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .em{
+            background-color: grey;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sriharsha Telikicherla</h1>
+            <p>Web Developer | Programmer</p>
+            <img src="C:\Users\Admin\Desktop\WhatsApp Image 2024-10-02 at 13.21.42_cad1e2c5.jpg" alt="Harsha" class="profile-photo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm an enthusiastic web developer with hands-on experience in building responsive websites and interactive web applications. My skills encompass front-end technologies like HTML, CSS, JavaScript, along with proficiency in various web development frameworks.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-gallery">
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>Personal Portfolio</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>BookMyShow Clone</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 3</h3>
+                <p>Chatbot Application</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Java</li>
+            <li>MongoDB</li>
+            <li>C</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <p><strong>Web Developer Intern</strong> | Smarteeva Solutions | Fall 2021</p>
+        <p>Worked on front-end development tasks and collaborated with the team to enhance website performance.</p>
+
+        <p><strong>Senior Web Developer</strong> | TCS Tech | 2019 - 2020</p>
+        <p>Developed websites using HTML, CSS, JavaScript and React.</p>
+
+        <p><strong>Junior Web Developer</strong> | Harsha Solutions | 2015 - 2019</p>
+        <p>Assisted in the development of websites using basic HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Institution</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Bachelor of Technology in Computer Science</td>
+                <td>Amrita Vishwa Vidyapeetham</td>
+                <td>2023-2027</td>
+            </tr>
+            <tr>
+                <td>Intermediate</td>
+                <td>Sri Chaitanya Junior College</td>
+                <td>2021-2023</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <a href="mailto:sriharsha.telikicherla@gmail.com?subject=Subject Here&body=Body content here"><button class="em">Email Me</button></a>
+    </section>
+</body>
+</html>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+            const options = {
+                threshold: 0.5
+            };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, options);
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
